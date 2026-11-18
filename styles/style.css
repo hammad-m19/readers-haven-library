@@ -490,7 +490,7 @@ section {
 .services-list p{color:var(--muted)}
 .services-list span{justify-self:end;text-align:right;font:600 .95rem var(--head);color:var(--teal)}
 @media(max-width:760px){.services-list li{grid-template-columns:1fr;gap:.3rem}.services-list span{justify-self:start;text-align:left}}
-
+@media(max-width:480px){.services-list h3{font-size:1.05rem}}
 /* ===== 7. PAGE: CONTACT (contact.html), ===== */
 
 
