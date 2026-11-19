@@ -481,6 +481,21 @@ section {
 
 /* ===== 4. PAGE: COLLECTIONS (collections.html), ===== */
 
+.collections-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:2rem}
+.collections-book{scroll-margin-top:90px;aspect-ratio:3/4;padding:1.5rem 1.3rem 1.3rem 2rem;border-radius:3px 10px 10px 3px;color:#fff;display:flex;flex-direction:column;justify-content:space-between;box-shadow:inset 10px 0 0 rgba(0,0,0,.18),0 14px 26px -16px rgba(23,32,51,.7);transform-origin:left center;transition:transform .55s var(--ease),box-shadow .55s var(--ease)}
+.collections-book:hover{transform:perspective(800px) rotateY(-14deg) translateY(-6px);box-shadow:inset 10px 0 0 rgba(0,0,0,.18),24px 26px 34px -18px rgba(23,32,51,.7)}
+.collections-book small{opacity:.8;font-size:.8rem}
+.collections-book h3{font-size:1.7rem}
+.collections-book p{font-size:.9rem;opacity:.9;line-height:1.5;margin-top:.4rem}
+.collections-book:nth-child(1){background:var(--teal)}
+.collections-book:nth-child(2){background:var(--rose)}
+.collections-book:nth-child(3){background:var(--ink)}
+.collections-book:nth-child(4){background:var(--saffron);color:var(--ink)}
+.collections-book:nth-child(5){background:var(--blue)}
+.collections-book:nth-child(6){background:var(--plum)}
+@media(max-width:600px){.collections-grid{grid-template-columns:repeat(2,1fr);gap:1rem}.collections-book{padding:1rem 1rem 1rem 1.5rem}.collections-book h3{font-size:1.25rem}}
+
+
 /* ===== 5. PAGE: MEMBERSHIP (membership.html), ===== */
 .membership-plans{display:grid;grid-template-columns:repeat(3,1fr);gap:1.6rem}
 .membership-plan{display:flex;flex-direction:column;padding:2rem 1.8rem;background:repeating-linear-gradient(transparent 0 31px,#e1e6e1 31px 32px),var(--card);border:1px solid var(--line);border-top:4px solid var(--rose);border-radius:2px}
