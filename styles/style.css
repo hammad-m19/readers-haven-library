@@ -502,6 +502,7 @@ section {
 .contact-form input:focus,.contact-form textarea:focus{outline:0;background-size:100% 3px}
 .contact-form .btn{justify-self:start}
 @media(max-width:820px){.contact-grid{grid-template-columns:1fr;gap:2.5rem}}
+@media(max-width:480px){.contact-form .btn{width:100%}}
 
 /* ===== 8. REDUCED MOTION  ===== */
 
