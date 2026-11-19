@@ -482,6 +482,22 @@ section {
 /* ===== 4. PAGE: COLLECTIONS (collections.html), ===== */
 
 /* ===== 5. PAGE: MEMBERSHIP (membership.html), ===== */
+.membership-plans{display:grid;grid-template-columns:repeat(3,1fr);gap:1.6rem}
+.membership-plan{display:flex;flex-direction:column;padding:2rem 1.8rem;background:repeating-linear-gradient(transparent 0 31px,#e1e6e1 31px 32px),var(--card);border:1px solid var(--line);border-top:4px solid var(--rose);border-radius:2px}
+.membership-plan.featured{background:var(--ink);color:#fff;border-color:var(--ink);border-top-color:var(--saffron)}
+.membership-plan.featured .btn{background:var(--saffron);border-color:var(--saffron);color:var(--ink)}
+.membership-price{font:800 2.6rem var(--head);margin:.6rem 0 1rem}
+.membership-price small{font:400 1rem var(--body);opacity:.7}
+.membership-plan ul{list-style:none;padding:0;margin-bottom:2rem;flex:1}
+.membership-plan li{position:relative;padding:.4rem 0 .4rem 1.7rem}
+.membership-plan li::before{content:"";position:absolute;left:0;top:.95rem;width:.9rem;height:.45rem;border-left:3px solid var(--teal);border-bottom:3px solid var(--teal);rotate:-45deg}
+.membership-plan.featured li::before{border-color:var(--saffron)}
+.membership-steps{background:#e4e9e3}
+.membership-steps ol{list-style:none;padding:0;counter-reset:s;display:grid;grid-template-columns:repeat(3,1fr);gap:2rem;margin-top:2rem}
+.membership-steps li{counter-increment:s;padding-top:1rem;border-top:3px solid var(--ink)}
+.membership-steps li::before{content:counter(s);display:block;font:800 2rem var(--head);color:var(--rose)}
+@media(max-width:860px){.membership-plans,.membership-steps ol{grid-template-columns:1fr}}
+
 
 /* ===== 6. PAGE: SERVICES (services.html),===== */
 .services-list{list-style:none;padding:0}
