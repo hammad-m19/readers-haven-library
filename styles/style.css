@@ -492,7 +492,16 @@ section {
 @media(max-width:760px){.services-list li{grid-template-columns:1fr;gap:.3rem}.services-list span{justify-self:start;text-align:left}}
 @media(max-width:480px){.services-list h3{font-size:1.05rem}}
 /* ===== 7. PAGE: CONTACT (contact.html), ===== */
-
+.contact-grid{display:grid;grid-template-columns:1fr 1.1fr;gap:4rem}
+.contact-hours{width:100%;border-collapse:collapse;margin:1.5rem 0}
+.contact-hours td{padding:.7rem 0;border-bottom:1px solid var(--line)}
+.contact-hours td:last-child{text-align:right;font-weight:600}
+.contact-form{display:grid;gap:1.6rem}
+.contact-form label{display:grid;gap:.3rem;font:600 .9rem var(--head)}
+.contact-form input,.contact-form textarea{font:400 1rem var(--body);color:var(--ink);padding:.6rem 0;border:0;border-bottom:2px solid var(--line);border-radius:0;background:linear-gradient(var(--saffron),var(--saffron)) left bottom/0 3px no-repeat;transition:background-size .5s var(--ease)}
+.contact-form input:focus,.contact-form textarea:focus{outline:0;background-size:100% 3px}
+.contact-form .btn{justify-self:start}
+@media(max-width:820px){.contact-grid{grid-template-columns:1fr;gap:2.5rem}}
 
 /* ===== 8. REDUCED MOTION  ===== */
 
