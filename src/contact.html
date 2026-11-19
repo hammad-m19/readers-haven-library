@@ -1,12 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Readers' Haven | contact</title>
-  <link rel="stylesheet" href="../styles/style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Opening hours, address and a contact form.">
+<title>Contact | Readers' Haven Library</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Literata:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../styles/style.css">
 </head>
 <body>
-  <h1>contact page placeholder</h1>
+<header class="site-header"><div class="wrap">
+<a class="logo" href="index.html">Readers' Haven</a>
+<input type="checkbox" id="nav" class="nav-toggle" aria-label="Toggle menu">
+<label for="nav" class="nav-btn"></label>
+<nav class="site-nav">
+<a href="index.html">Home</a>
+<a href="collections.html">Collections</a>
+<a href="membership.html">Membership</a>
+<a href="services.html">Services</a>
+<a href="contact.html" aria-current="page">Contact</a>
+</nav>
+</div></header>
+<main>
+<section class="page-top"><div class="wrap stagger">
+<h1>Come say hello.</h1>
+<p class="lead">Questions about a card, a donation or a book you cannot find? Write to us or drop by.</p>
+</div></section>
+<section><div class="wrap contact-grid">
+<div>
+<h2>Visit us</h2>
+<p>14 Canal View Road, Lahore</p>
+<table class="contact-hours">
+<tr><td>Saturday to Thursday</td><td>9 am to 8 pm</td></tr>
+<tr><td>Friday</td><td>Closed</td></tr>
+<tr><td>Public holidays</td><td>10 am to 4 pm</td></tr>
+</table>
+<p>hello@readershaven.example<br>+92 42 3555 0147</p>
+</div>
+<form class="contact-form" action="#" method="post">
+<label>Your name<input type="text" name="name" required></label>
+<label>Email<input type="email" name="email" required></label>
+<label>Message<textarea name="message" rows="5" required></textarea></label>
+<button class="btn" type="submit">Send message</button>
+</form>
+</div></section>
+</main>
+<footer class="site-footer"><div class="wrap">
+<div><h3>Readers' Haven</h3><p>A neighbourhood library for people who still like the smell of paper.</p></div>
+<div><h3>Visit</h3><p>14 Canal View Road, Lahore<br>+92 42 3555 0147</p></div>
+<small>&copy; 2026 Readers' Haven Library. A university project, all details are fictional.</small>
+</div></footer>
 </body>
 </html>
